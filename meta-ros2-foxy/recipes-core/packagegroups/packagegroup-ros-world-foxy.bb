@@ -160,3 +160,69 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES_DEPENDING_ON_GLFW = " \
     realsense-node \
     realsense-ros \
 "
+
+BROKEN = " \
+    behaviortree-cpp-v3 \
+    cartographer \
+    cv-bridge \
+    geographic-msgs \
+    joy \
+    lgsvl-msgs \
+    libphidget22 \
+    logging-demo \
+    move-base-msgs \
+    ouster-msgs \
+    phidgets-msgs \
+    rclc \
+    realsense-ros \
+    rosbag2-bag-v2-plugins \
+    rosbag2-cpp \
+    system-modes \
+"
+BROKEN_DEP = " \
+    camera-calibration \
+    cartographer-ros \
+    compressed-depth-image-transport \
+    compressed-image-transport \
+    depth-image-proc \
+    geodesy \
+    geographic-info \
+    ifm3d-core \
+    image-pipeline \
+    image-proc \
+    image-publisher \
+    image-rotate \
+    image-view \
+    phidgets-api \
+    phidgets-digital-outputs \
+    phidgets-high-speed-encoder \
+    phidgets-motors \
+    rclc-examples \
+    ros2-ouster \
+    ros2bag \
+    rosbag2 \
+    rosbag2-compression \
+    rosbag2-converter-default-plugins \
+    rosbag2-transport \
+    stereo-image-proc \
+    system-modes-examples \
+    teleop-twist-joy \
+    theora-image-transport \
+    image-transport-plugins \
+    phidgets-accelerometer \
+    phidgets-analog-inputs \
+    phidgets-digital-inputs \
+    phidgets-drivers \
+    phidgets-gyroscope \
+    phidgets-ik \
+    phidgets-magnetometer \
+    phidgets-spatial \
+    phidgets-temperature \
+    rclc-examples \
+    ros-base \
+    system-modes-examples \
+    vision-opencv \
+    realsense-examples \
+    realsense-node \
+"
+RDEPENDS_${PN}_remove = "${BROKEN} ${BROKEN_DEP}"
