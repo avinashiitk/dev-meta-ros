@@ -7,7 +7,9 @@ DEPENDS = "boost libflann libeigen qhull"
 
 PV = "1.9.1+git${SRCPV}"
 SRCREV = "72f41b60a539cd1da67d1329b57222290122a0bb"
-SRC_URI = "git://github.com/PointCloudLibrary/pcl.git"
+SRC_URI = "git://github.com/PointCloudLibrary/pcl.git \
+    file://0001-Fix-deprecated-boost-endians.patch \
+"
 
 S = "${WORKDIR}/git"
 
